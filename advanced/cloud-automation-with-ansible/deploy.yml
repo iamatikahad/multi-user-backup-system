@@ -1,0 +1,5 @@
+- name: Provision EC2 and deploy site
+  hosts: aws
+  tasks:
+    - name: Install Apache
+      apt: name=apache2 state=present

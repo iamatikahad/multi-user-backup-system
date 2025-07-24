@@ -1,0 +1,1 @@
+Get-PhysicalDisk | Format-Table FriendlyName, MediaType, Size
