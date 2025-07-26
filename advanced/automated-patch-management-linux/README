@@ -1,1 +1,4 @@
-
+স্ক্রিপ্ট ফাইল তৈরি করুন:nano /patch.sh
+এক্সিকিউটেবল করুন:chmod +x /patch.sh
+রান করুন:sudo ./patch.sh
+সকল patch result → /var/log/patch-management.log ফাইলে সংরক্ষণ হবে।
