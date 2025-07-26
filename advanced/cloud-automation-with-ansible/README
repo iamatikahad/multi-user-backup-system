@@ -1,0 +1,22 @@
+# 🚀 EC2 Apache Deployment using Ansible
+
+This Ansible playbook provisions an EC2 instance and deploys a static website using Apache.
+
+## 📦 Features
+
+- Installs Apache2 on Ubuntu EC2 instance
+- Copies local website files to `/var/www/html/`
+- Ensures Apache is running and enabled
+- Configures UFW to allow HTTP access
+
+## 🛠️ Requirements
+
+- Ansible installed
+- EC2 inventory group configured (e.g., `aws`)
+- SSH access to EC2 instance
+- Website files in `./site/` directory
+
+## ▶️ Usage
+
+```bash
+ansible-playbook -i inventory ec2_apache_deploy.yml
